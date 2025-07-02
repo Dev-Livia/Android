@@ -25,8 +25,8 @@
         nav{
              display: flex;
             flex-wrap: wrap;
-            gap: 10px; /* espaço entre os links */
-            justify-content: left; /* centraliza os links */
+            gap: 10px; 
+            justify-content: left; 
             padding-top: 35px;
         }
         nav>a{
@@ -74,37 +74,69 @@
         padding: 15px;
         border-radius: 5px 5px 0 0;
         }
-        .conteudo{
-            background-color: #84E1AD;
-            width: 650px;
-            height: auto;
-            margin: auto;
-            padding: 15px;
-            border-radius: 0 0 ;
-            display: flex;
-        }
-        
-        .conteudo1 {
-            background-color: #84E1AD;
-            width: 650px;
-            height: auto;
-            margin: auto;
-            padding: 15px;
-            border-radius: 0 0 ;
-            display: flex;
-            }
+         .box {
+      background-color: #d5f5e3;
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      margin: 20px auto;
+    }
 
-            .conteudo2 {
-            text-align: left;
-            background-color: #84E1AD;
-            width: 650px;
-            height: auto;
-            margin: auto;
-            padding: 15px;
-            border-radius: 0 0 ;
-            display: flex;
-            }
-        
+    .extra {
+      font-weight: bold;
+      color: white;
+      background-color: #2ecc71;
+      padding: 10px;
+      border-radius: 5px;
+      width: auto;
+    }
+
+    .conteudo {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .listas {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .conteudo1 {
+      width: 45%;
+    }
+
+    .conteudo1 p {
+      margin: 4px 0;
+    }
+
+    .check::before {
+      content: "✔ ";
+      color: black;
+    }
+
+    .rodape {
+      margin-top: 15px;
+    }
+
+    .link {
+      color: #1a5276;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link::after {
+      content: " 🔗";
+    }
+    footer{
+        text-align: center;
+        background-color: #1F6F43;
+        padding: 5px;
+        color: white;
+    }
+    footer>a{
+        color: white;
+        text-decoration: none;
+    }
     </style>
 </head>
 <body>
@@ -154,32 +186,48 @@
     escritório do Google e olhou para o lado dos banheiros e a 
     identificação foi imediata: simples, limpo, objetivo.
 </p>
-    <div>
-        <p class="extra">Quer aprender mais ?</p>
-            <p class="conteudo">Outro assunto curioso em relação ao Android é que cada versão sempre foi 
-                nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.
-            </p>
-            <div class="caixas">
-                    <div class="conteudo1">
-                        1.5 - Cupcake<br>
-                        1.6 - Donut<br> 
-                        2.0/2.1 - Eclair<br>
-                        2.2 - Froyo<br>
-                        2.3 - Gingerbread<br>
-                        3.0 - Honeycomb<br>
-                        4.0 - Ice Cream Sandwich
-                    </div>
-                </div>
-           <div class="conteudo2">
-                        4.1 - Jelly Bean<br>
-                        4.4 - KitKat<br>
-                        5.0 - Lollipop<br>
-                        6.0 - Marshmallow<br>
-                        7.0 - Nougat<br>
-                        8.0 - Oreo<br>
-                        9.0 - Pie
-                    </div> 
+ <div class="box">
+    <p class="extra">Quer aprender mais?</p>
+
+    <p class="conteudo">
+      Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce,
+      em ordem alfabética a partir da versão 1.5 até a 9.0.
+    </p>
+
+    <div class="listas">
+      <div class="conteudo1">
+        <p class="check">1.5 - Cupcake</p>
+        <p class="check">1.6 - Donut</p>
+        <p class="check">2.0/2.1 - Eclair</p>
+        <p class="check">2.2 - Froyo</p>
+        <p class="check">2.3 - Gingerbread</p>
+        <p class="check">3.0 - Honeycomb</p>
+        <p class="check">4.0 - Ice Cream Sandwich</p>
+      </div>
+      <div class="conteudo1">
+        <p class="check">4.1 - Jelly Bean</p>
+        <p class="check">4.4 - KitKat</p>
+        <p class="check">5.0 - Lollipop</p>
+        <p class="check">6.0 - Marshmallow</p>
+        <p class="check">7.0 - Nougat</p>
+        <p class="check">8.0 - Oreo</p>
+        <p class="check">9.0 - Pie</p>
+      </div>
     </div>
+
+    <p class="conteudo rodape">
+      Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou
+      a usar numerações, o que deu origem ao Android 10.
+    </p>
+
+    <p class="conteudo rodape">
+      Acesse aqui o site <a href="https://www.android.com/history" target="_blank" class="link">Android History</a>
+      para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.
+    </p>
+  </div>
+  <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.
+</p>
 </main>
+<footer> Site criado por <a href="https://github.com/Dev-Livia?tab=repositories" target="_blank">Lívia Nicole</a></footer>
 </body>
 </html>
